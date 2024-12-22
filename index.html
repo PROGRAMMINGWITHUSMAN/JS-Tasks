@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+        
+        body {
+            background: rgb(255, 111, 188);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+
+        .filter {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1; 
+            opacity: 0.7;
+            display: none;
+        }
+
+        table {
+            position: absolute;
+            left: 50%;
+            top: 52rem;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 1200px;
+            border-collapse: collapse;
+            box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+            border-radius: 12px 12px 0 0;
+            z-index: 2; 
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid #ffcbcb;
+        }
+
+        th {
+            background-color: #ba68c8;
+            color: #fafafa;
+            font-family: 'Open Sans', Sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        tr {
+            width: 100%;
+            background-color: #fafafa;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+
+        table th:nth-child(1), table td:nth-child(1) {
+            width: 5%;
+        }
+
+        table th:nth-child(2), table td:nth-child(2) {
+            width: 20%;
+        }
+
+        table th:nth-child(3), table td:nth-child(3) {
+            width: 65%;
+        }
+
+        table th:nth-child(4), table td:nth-child(4) {
+            width: 20%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width: 861px) {
+            table {
+                width: 90%;
+                left: 50%;
+                top: auto;
+                transform: translateX(-50%);
+                margin-top: 20px;
+            }
+
+            td, th {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="filter"></div>
+    <table>
+        <tr>
+            <th colspan="4" class="title">Tasks List</th>
+        </tr>
+        <tr>
+            <th>S#</th>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Age Check</td>
+            <td>A JavaScript Program that identifies user age group: child, teenager, adult, or senior citizen.</td>
+            <td><a href="Age Check/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Weather Advice</td>
+            <td>A basic weather program that offers suggestions depending on the user's selected weather type</td>
+            <td><a href="Weather advice/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Grade Determination</td>
+            <td>A Javascript Program evaluates user input marks and assigns grades from A to F based on performance</td>
+            <td><a href="Grade Determination/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Login System</td>
+            <td>Simple login system that validates user credentials for access with predefined username and password</td>
+            <td><a href="Login System/index.html">Link &#x1F517;</a></td>
+        </tr>   
+        <tr>
+            <td>5.</td>
+            <td>Number Range Checker</td>
+            <td>This program verifies whether the entered number lies within predefined ranges from 1 to 100.</td>
+            <td><a href="Number Range Checker/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>Grade Calculator</td>
+            <td>A JavaScript program that calculates and displays grades based on the user's entered score.</td>
+            <td><a href="GradeCalculator/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Weather Advisory</td>
+            <td>Temperature-based advisory system that provides based on user-input weather conditions.</td>
+            <td><a href="Weather advisery/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Simple ATM</td>
+            <td>An ATM simulation that lets users check balance, withdraw, deposit money, or exit securely.</td>
+            <td><a href="Simple ATM/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Age group Classifier</td>
+            <td>This age categorization program informs users if they are a child, teenager, adult, or senior citizen.</td>
+            <td><a href="Age Group Classifier/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>Simple Quiz</td>
+            <td>This quiz program asks 10 questions, scores responses, and provides a performance rating.</td>
+            <td><a href="Simple Quiz/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>Multiplication Table</td>
+            <td>This quiz program asks 10 questions, scores responses, and provides a performance rating.</td>
+            <td><a href="Multiplication Table/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>Positive Integer Operations</td>
+            <td>A JavaScript Program that takes a positive integer from user & display the following in your browser.</td>
+            <td><a href="positive integers/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>13.</td>
+            <td>Negative Integer Operations</td>
+            <td>A JavaScript program that takes a negative floating point number from user & display the following in your browser.</td>
+            <td><a href="Negative integers/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>14.</td>
+            <td>Absolute Value</td>
+            <td>A JavaScript program that displays the absolute value of a number.</td>
+            <td><a href="Absolute value/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>15.</td>
+            <td>Random Dice</td>
+            <td>A JavaScript program that simulates a dice using random() method of JS Math class.</td>
+            <td><a href="Dice/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>16.</td>
+            <td>Head and Tail</td>
+            <td>A JavaScript program that simulates a coin toss using random() method of JS Math class.</td>
+            <td><a href="Heads and Tails/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td>Random Number</td>
+            <td>A JavaScript program that shows a random number between 1
+                and 100 in your browser.</td>
+            <td><a href="Random Number/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>18.</td>
+            <td>Match Number</td>
+            <td>A JavaScript program that shows a random number between 1 and 100 in your browser.</td>
+            <td><a href="Match Number/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>19.</td>
+            <td>loop Program</td>
+            <td>A JavaScript program that print anything according to how many times you say</td>
+            <td><a href="loop program/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>20.</td>
+            <td>Background Color Cange</td>
+            <td>A JavaScript program that you click on the button it will change the background color</td>
+            <td><a href="Background Color Change/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>21.</td>
+            <td>Box Colour Change</td>
+            <td>A JavaScript Program that you click on the button. The box background color will be change</td>
+            <td><a href="Box Color Change/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>22.</td>
+            <td>Bulb On/Off</td>
+            <td>A JavaScript program to turn a bulb on and off with smooth animation using JavaScript</td>
+            <td><a href="Bulb On & Off/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>23.</td>
+            <td>Ludo Dice</td>
+            <td>A JavaScript program that simulates a Ludo dice roll. Each dice number is displayed with its respective image</td>
+            <td><a href="Ludo Dice/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>24.</td>
+            <td>To-Do List</td>
+            <td>A JavaScript program, To-Do list where user can add, remove, and mark tasks as completed, allowing for easy task management.</td>
+            <td><a href="To-Do List/index.html">Link &#x1F517;</a></td>
+        </tr>
+        <tr>
+            <td>25.</td>
+            <td>Show Current Time</td>
+            <td>A JavaScript program, Wheneve you refresh it will show you the current time</td>
+            <td><a href="Show Current Time/index.html">Link &#x1F517;</a></td>
+        </tr>
+    </table>
+    </table>
+</body>
+</html>

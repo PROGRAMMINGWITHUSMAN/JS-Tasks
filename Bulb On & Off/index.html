@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <title>Bulb On/Off</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: rgb(233, 76, 161);
+        margin: 0;
+        font-family: sans-serif;
+        align-items: center;
+    }
+    *{
+        font-family: sans-serif;
+        color: #fff;
+    }
+    h1 {
+        position: absolute;
+        top: 0px;
+        left: 7px;
+        color: white;
+    }
+    h4{
+        position: absolute;
+        top: 71px;
+        line-height: 20px;
+        left: 7px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        top: 135px;
+        left: 7px;
+        color: white;
+    }
+    .bulb {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .bulb img {
+        width: 220px;
+        max-width: 100%; 
+    }
+    button {
+        background: #856;
+        border-radius: 50px;
+        color: orange;
+        width: 150px;
+        height: 50px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover{
+        background: none;
+        border: 2px solid #345;
+        transition: 0.4s ease-in-out;
+        color: black;
+    }
+</style>
+<body>
+    <h1>Bulb On & Off</h1>
+    <h4>
+        Whenever you Click on "Turn On" Button, Bulb will blow <br>
+        Whenever you click on "Turn Off" Button, Bulb will turn off.
+    </h4>
+    <h2>Result:</h2>
+
+    <div class="main-container">
+        <div class="bulb">
+            <img src="img/bulb-off (1).png" alt="" id="bulb">
+        </div>
+        <div class="buttons">
+            <button id="btn1" onclick="TurnOn()">Turn On</button>
+            <button id="btn2" onclick="TurnOff()">Turn Off</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: rgb(233, 76, 161);
+        margin: 0;
+        font-size: 39px;
+        font-family: sans-serif;
+        align-items: center;
+    }
+    *{
+        font-family: sans-serif;
+        color: #fff;
+    }
+    h1 {
+        position: absolute;
+        top: 0px;
+        font-size: larger;
+        left: 7px;
+        color: white;
+    }
+    h4{
+        position: absolute;
+        top: 71px;
+        font-size: medium;
+        line-height: 20px;
+        left: 7px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        top: 135px;
+        font-size: larger;
+        left: 7px;
+        color: white;
+    }
+    @media(max-width:437px){
+        h4{
+            margin-top: 4rem;
+        }
+    }
+</style>
+<body>
+    <h1>Show Current Time</h1>
+    <h4>Everytime you refresh it will show you the current time</h4>
+    <h2>Result:</h2>
+    <script>
+        var today = new Date()
+        var time1 = today.getHours()
+        var time2 = today.getMinutes()
+        var time3 = today.getSeconds()
+
+
+        if (time1 >= 12) {
+            var time = "pm"
+        }
+
+        else{
+            time = "am"
+        }
+        var fulltime = time1 + ":" + time2 + ":" + time3 + ":" + time; 
+        document.write(fulltime);
+        
+</script>
+    
+</body>
+</html>

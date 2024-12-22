@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Learning</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ea4ca1;
+            font-family: sans-serif;
+        }
+        h1 {
+            position: absolute;
+            top: 0px;
+            left: 7px;
+            color: white;
+        }
+        h4{
+            position: absolute;
+            top: 71px;
+            line-height: 20px;
+            left: 7px;
+            color: white;
+        }
+        h2{
+            position: absolute;
+            top: 119px;
+            left: 7px;
+            color: white;
+        }
+        
+        button {
+            background: #856;
+            border-radius: 50px;
+            color: orange;
+            width: 200px;
+            height: 65px;
+            max-width: 160px;
+            outline: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover{
+            background: none;
+            border: 2px solid #345;
+            transition: 0.4s ease-in-out;
+            color: black;
+        }
+        @media (max-width: 959px) {
+            .box-container {
+                margin-top: 20rem;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            .box-container {
+                margin-top: 59rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box-wrapper {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body id="body">
+    <h1>BackGround Color Change</h1>
+    <h4>Whenever you Click on button it will change the background color</h4>
+    <h2>Result:</h2>
+
+    <div class="box-container">
+        <button onclick="Change()">Press Me!</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

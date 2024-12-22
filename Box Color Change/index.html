@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Learning</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ea4ca1;
+            font-family: sans-serif;
+        }
+        h1 {
+            position: absolute;
+            top: 0px;
+            left: 7px;
+            color: white;
+        }
+        h4{
+            position: absolute;
+            top: 71px;
+            line-height: 20px;
+            left: 7px;
+            color: white;
+        }
+        h2{
+            position: absolute;
+            top: 119px;
+            left: 7px;
+            color: white;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background: none;
+        }
+
+        .box-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: none;
+            align-items: center;
+            width: 200px;
+            margin: 15px;
+        }
+
+        
+        #div1 , #div2 , #div3 ,#div4 {
+            height: 220px;
+            width: 100%;
+            max-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            background-color: #345;
+            color: white;
+        }
+        .box-wrapper button {
+            background: #856;
+            border-radius: 50px;
+            color: orange;
+            width: 100%;
+            max-width: 160px;
+            height: 45px;
+            outline: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover{
+            background: none;
+            border: 2px solid #345;
+            transition: 0.4s ease-in-out;
+            color: black;
+        }
+        @media (max-width: 959px) {
+            .box-container {
+                margin-top: 20rem;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            .box-container {
+                margin-top: 59rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box-wrapper {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Box Color Change</h1>
+    <h4>Whenever you Click on button it will change the background color</h4>
+    <h2>Result:</h2>
+
+    <div class="box-container">
+        <div class="box-wrapper">
+            <div id="div1">Box1</div>
+            <button onclick="Change()">Press Me!</button>
+        </div>
+        <div class="box-wrapper">
+            <div id="div2">Box2</div>
+            <button onclick="Change1()">Press Me!</button>
+        </div>
+        <div class="box-wrapper">
+            <div id="div3">Box3</div>
+            <button onclick="Change2()">Press Me!</button>
+        </div>
+        <div class="box-wrapper">
+            <div id="div4">Box4</div>
+            <button onclick="Change3()">Press Me!</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

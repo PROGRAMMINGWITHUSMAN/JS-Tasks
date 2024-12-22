@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: rgb(233, 76, 161);
+        margin: 0;
+        font-family: sans-serif;
+        align-items: center;
+    }
+    *{
+        font-family: sans-serif;
+        color: #fff;
+    }
+    h1 {
+        position: absolute;
+        top: 0px;
+        left: 7px;
+        color: white;
+    }
+    h4{
+        position: absolute;
+        top: 71px;
+        line-height: 20px;
+        left: 7px;
+        color: white;
+    }
+    h2{
+        position: absolute;
+        top: 126px;
+        left: 7px;
+        color: white;
+    }
+    button {
+        background: #856;
+        border-radius: 50px;
+        color: orange;
+        display: flex;
+        margin: 0;
+        justify-content: center; 
+        align-items: center; 
+        font-size: 16px;
+        width: 150px;
+        height: 50px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 95px;
+        margin-top: 30px;
+    }
+
+    button:hover{
+        background: none;
+        border: 2px solid #345;
+        transition: 0.4s ease-in-out;
+        color: black;
+    }
+    #Dice {
+        width: 350px; 
+        height: 350px; 
+        object-fit: contain; 
+    }
+
+    @media(max-width:425px){
+        .container{
+            margin-top: 50px;
+        }
+    }
+</style>
+<body>
+    <h1>Ludo Dice</h1>
+    <h4>Everytime you click on the button "Roll Dice" it will change the picture, according to the Random number</h4>
+    <h2>Result:</h2>
+
+    <div class="container">
+        <div class="img">
+            <img src="img/Number_1-removebg-preview (1).png" id="Dice" alt="">
+        </div>
+        <div class="button">
+            <button onclick="RollDice()">Roll Dice</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
